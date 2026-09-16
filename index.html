@@ -11,10 +11,11 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- Début du container -->
     <div class="quiz-container">
       <h1>Statut de l'enquête : Quiz Castle 🕵️‍♂️📖</h1>
 
-      <!-- Écran de Bienvenue -->
+      <!-- Début Écran de Bienvenue -->
       <div id="welcome-screen" class="screen">
         <p>
           Êtes-vous un vrai partenaire pour Beckett, ou un simple romancier
@@ -22,18 +23,20 @@
         </p>
         <button id="start-btn" class="btn">Commencer l'enquête</button>
       </div>
+      <!-- Fin Écran de Bienvenue -->
 
-      <!-- Écran des Questions -->
+      <!-- Début Écran des Questions -->
       <div id="quiz-screen" class="screen hide">
         <div class="progress">
           Question <span id="current-question-num">1</span> sur
           <span id="total-questions-num">20</span>
         </div>
 
-        <!-- Zone du Chrono ajoutée ici -->
+        <!-- Début de la Zone du Chrono ajoutée -->
         <div class="timer-zone">
           Temps restant : <span id="timer-sec">10</span>s
         </div>
+        <!-- Fin de la Zone du Chrono ajoutée -->
 
         <div id="question-text" class="question">
           Ici s'affichera la question.
@@ -43,15 +46,18 @@
         </div>
         <button id="next-btn" class="btn hide">Question suivante ➡️</button>
       </div>
+      <!-- Fin Écran des Questions -->
 
-      <!-- Écran des Résultats -->
+      <!-- Début Écran des Résultats -->
       <div id="result-screen" class="screen hide">
         <h2>Affaire Classée ! 📂</h2>
         <p id="score-text">Votre score s'affichera ici.</p>
         <p id="feedback-text">Message personnalisé.</p>
         <button id="restart-btn" class="btn">Recommencer le quiz</button>
       </div>
+      <!-- Fin Écran des Résultats -->
     </div>
+    <!-- Fin du container -->
 
     <!-- Importation du fichier JS -->
     <script src="script.js"></script>
