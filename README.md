@@ -38,3 +38,7 @@ Lien vers le projet :
 - boucle for
 - Condition if else / if else if else
 - setInterval / clearInterval
+
+## 📝 Licence
+
+Ce projet a été réalisé à des fins éducatives et de divertissement. Les droits de la série _Castle_ et des personnages appartiennent à leurs créateurs et diffuseurs respectifs.
