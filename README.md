@@ -2,6 +2,10 @@
 
 ![Design preview for the project](./img/preview.png)
 
+- Ecran du quiz :
+
+![Design preview for the project](./img/preview-1.png)
+
 ## 🚀 Le challenge
 
 Un site web de quiz interactif, immersif et entièrement _responsive_ dédié à la célèbre série télévisée policière **Castle**. Testez vos connaissances et découvrez si vous êtes un véritable détective du 12ème District ou un simple écrivain indiscret !
