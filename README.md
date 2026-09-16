@@ -24,7 +24,7 @@ Cette application dispose de plusieurs fonctionnalités :
 
 ## 📸 Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/quiz_castle/
 
 ## 🛠️ Projet développé avec
 
