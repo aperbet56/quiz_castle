@@ -217,3 +217,29 @@ p {
         background-color: #434c5e;
     }
 }
+
+/**** Responsive design pour tablettes et ordinateurs (Écrans plus grands) ****/
+
+@media screen and (min-width: 768px) {
+    .quiz-container {
+        padding: 35px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+        margin-bottom: 25px;
+    }
+
+    .question {
+        font-size: 1.35rem;
+        margin-bottom: 25px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 14px 28px;
+    }
+}
