@@ -1,0 +1,219 @@
+/**** Importation des polices ****/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+    /* Supprime le flash bleu au clic sur mobile */
+}
+
+h1,
+h2 {
+    color: #c9a054;
+    line-height: 1.3;
+    font-family: "Merriweather", serif;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-family: "Inter", sans-serif;
+}
+
+/**** body ****/
+
+body {
+    background-color: #16161f;
+    background-image: radial-gradient(#252535 8%, transparent 8%);
+    background-size: 24px 24px;
+    color: #fffffe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    /* Hauteur dynamique parfaite pour les navigateurs mobiles */
+    padding: 16px;
+    font-family: "Inter", sans-serif;
+}
+
+/**** Conteneur Principal ****/
+
+.quiz-container {
+    background-color: #20202e;
+    padding: 24px;
+    border-radius: 16px;
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.6);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #c9a054;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.5px;
+}
+
+h2 {
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #cbd5e1;
+    font-size: 0.95rem;
+}
+
+/**** Écrans et visibilité ****/
+
+.screen {
+    animation: fadeIn 0.4s ease-out;
+}
+
+/**** Animation fadeIn ****/
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hide {
+    display: none;
+}
+
+/**** En-têtes du Quiz ****/
+
+.progress {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.timer-zone {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #f87171;
+    margin-bottom: 20px;
+    background-color: rgba(248, 113, 113, 0.1);
+    padding: 6px 14px;
+    border-radius: 20px;
+    display: inline-block;
+    border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.question {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+/**** Grille des réponses ****/
+
+.options-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+/**** Boutons de base (Optimisés pour les doigts) ****/
+
+.btn {
+    width: 100%;
+    background-color: #c9a054;
+    color: #16161f;
+    padding: 16px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+/**** Désactive les effets de survol sur mobile pour éviter les bugs visuels après le clic ****/
+
+@media (hover: hover) {
+    .btn:hover:not(:disabled) {
+        background-color: #e6b862;
+    }
+}
+
+.btn:active:not(:disabled) {
+    transform: scale(0.98);
+}
+
+/**** Boutons spécifiques du choix multiple ****/
+
+.options-grid .btn.option-btn {
+    background-color: #2e2e42;
+    color: #f1f5f9;
+    text-align: left;
+    font-weight: 500;
+    border: 1px solid #3f3f5c;
+    padding: 14px 18px;
+}
+
+@media (hover: hover) {
+    .options-grid .btn.option-btn:hover:not(:disabled) {
+        background-color: #3b3b54;
+        border-color: #c9a054;
+    }
+}
+
+.options-grid .btn.option-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.85;
+}
+
+/**** États Correct / Faux ****/
+
+.options-grid .btn.correct {
+    background-color: #10b981;
+    border-color: #059669;
+    color: #fffffe;
+}
+
+.options-grid .btn.wrong {
+    background-color: #ef4444;
+    border-color: #dc2626;
+    color: #fffffe;
+}
+
+/**** Bouton Suivant et Recommencer ****/
+
+#next-btn,
+#restart-btn {
+    background-color: #3b4252;
+    color: #eceff4;
+    margin-top: 5px;
+    border: 1px solid #4c566a;
+}
+
+@media (hover: hover) {
+
+    #next-btn:hover,
+    #restart-btn:hover {
+        background-color: #434c5e;
+    }
+}
