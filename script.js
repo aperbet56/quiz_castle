@@ -213,7 +213,7 @@ const resetState = () => {
   clearInterval(clock);
   timeLeft = 10;
   timerSec.textContent = timeLeft;
-  nextBtn.classList.add("hide");
+  nextBtn.disabled = true;
   optionsContainer.innerHTML = "";
 };
 
@@ -225,7 +225,7 @@ const timeOut = () => {
   // Pour chaque bouton
   allButtons.forEach((btn) => (btn.disabled = true));
   allButtons[correctIndex].classList.add("correct");
-  nextBtn.classList.remove("hide");
+  nextBtn.disabled = false;
 };
 
 // Déclaration de la focntion startTimer() qui permet de gérer le compte à rebours
@@ -260,8 +260,7 @@ const selectAnswer = (selectedIndex, selectedButton) => {
     selectedButton.classList.add("wrong");
     allButtons[correctIndex].classList.add("correct");
   }
-
-  nextBtn.classList.remove("hide");
+  nextBtn.disabled = false;
 };
 
 // Déclaration de la fonction showQuestion() qui va permettre d'afficher une question
