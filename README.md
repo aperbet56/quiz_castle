@@ -19,3 +19,22 @@ Cette application dispose de plusieurs fonctionnalités :
 ## 📸 Démonstration
 
 Lien vers le projet :
+
+## 🛠️ Projet développé avec
+
+- Utilisation des balises sémantiques HTML5
+- CSS3
+- Flexbox
+- Grid
+- Animations CSS (transition, @keyframes)
+- Importation d'un normaliseur : le fichier normalize.css
+- Importation des polices "Inter" et "Merriweather"
+- Page web responsive
+- Commentaires HTML
+- Commentaires CSS
+- JavaScript
+- Code JavaScript commenté
+- addEventListener
+- boucle for
+- Condition if else / if else if else
+- setInterval / clearInterval
