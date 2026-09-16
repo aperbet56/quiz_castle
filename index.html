@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Castle - Testez vos connaissances</title>
+    <!-- Importation des fichiers css -->
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <h1>Statut de l'enquête : Quiz Castle 🕵️‍♂️📖</h1>
+
+      <!-- Écran de Bienvenue -->
+      <div id="welcome-screen" class="screen">
+        <p>
+          Êtes-vous un vrai partenaire pour Beckett, ou un simple romancier
+          indiscret ? Faites le test !
+        </p>
+        <button id="start-btn" class="btn">Commencer l'enquête</button>
+      </div>
+
+      <!-- Écran des Questions -->
+      <div id="quiz-screen" class="screen hide">
+        <div class="progress">
+          Question <span id="current-question-num">1</span> sur
+          <span id="total-questions-num">20</span>
+        </div>
+
+        <!-- Zone du Chrono ajoutée ici -->
+        <div class="timer-zone">
+          Temps restant : <span id="timer-sec">10</span>s
+        </div>
+
+        <div id="question-text" class="question">
+          Ici s'affichera la question.
+        </div>
+        <div id="options-container" class="options-grid">
+          <!-- Les boutons de réponses seront ajoutés ici par JavaScript -->
+        </div>
+        <button id="next-btn" class="btn hide">Question suivante ➡️</button>
+      </div>
+
+      <!-- Écran des Résultats -->
+      <div id="result-screen" class="screen hide">
+        <h2>Affaire Classée ! 📂</h2>
+        <p id="score-text">Votre score s'affichera ici.</p>
+        <p id="feedback-text">Message personnalisé.</p>
+        <button id="restart-btn" class="btn">Recommencer le quiz</button>
+      </div>
+    </div>
+
+    <!-- Importation du fichier JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
