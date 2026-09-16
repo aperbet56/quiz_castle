@@ -41,7 +41,7 @@ body {
     min-height: 100vh;
     min-height: 100dvh;
     /* Hauteur dynamique parfaite pour les navigateurs mobiles */
-    padding: 16px;
+    padding: 32px 16px;
     font-family: "Inter", sans-serif;
 }
 
@@ -148,7 +148,7 @@ p {
     font-size: 1rem;
     font-weight: bold;
     border-radius: 10px;
-    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out, border-color 0.2s ease-in-out;
+    transition: background-color 0.2s ease, transform 0.1s ease, border-color 0.2s ease;
 }
 
 /**** Désactive les effets de survol sur mobile pour éviter les bugs visuels après le clic ****/
@@ -181,7 +181,8 @@ p {
     }
 }
 
-.options-grid .btn.option-btn:disabled {
+.options-grid .btn.option-btn:disabled,
+#next-btn:disabled {
     cursor: not-allowed;
     opacity: 0.85;
 }
